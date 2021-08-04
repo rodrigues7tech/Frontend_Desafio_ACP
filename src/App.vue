@@ -1,11 +1,10 @@
 <template>
   <div id="app" class="container">
 
+    <!-- Botões topo Adicionar e Excluir -->
     <div id="add_del" >
       <a class="waves-effect waves-light btn-small modal-trigger green darken-0"><i class="fal fa-plus"></i> Novo</a>
-      
       <a class="waves-effect waves-light red lighten-2 btn-small excluir"><i class="far fa-trash-alt"></i> Excluir</a>
-    
     </div>
 
     <div id="titleProd">
@@ -42,6 +41,8 @@
             <td>$ {{produto.preco}}</td>
             <td>{{produto.categoria}}</td>
             <td><strong>{{produto.status}}</strong></td>
+
+            <!-- Botões editar e excluir -->
             <td>
               <a class="btn-floating btn-small waves-effect waves-light green darken-0"><i class="material-icons">edit</i></a>
               <a id="btnTableDel" class="btn-floating btn-small waves-effect waves-light orange accent-2 delete"><i class="far fa-trash-alt"></i></a>
